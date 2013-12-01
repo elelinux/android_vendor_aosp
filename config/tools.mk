@@ -26,23 +26,23 @@ PRODUCT_PACKAGES += \
 
 # Custom init script
 PRODUCT_COPY_FILES += \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/etc/init.evervolv.rc:root/init.evervolv.rc
+    $(SRC_AOSP_DIR)/prebuilt/common/etc/init.aosp.rc:root/init.aosp.rc
 
 # Utilize init.d scripts
 PRODUCT_COPY_FILES += \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/etc/init.d/05mountext:system/etc/init.d/05mountext \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/etc/init.d/20extgapps:system/etc/init.d/20extgapps
+    $(SRC_AOSP_DIR)/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    $(SRC_AOSP_DIR)/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    $(SRC_AOSP_DIR)/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    $(SRC_AOSP_DIR)/prebuilt/common/etc/init.d/05mountext:system/etc/init.d/05mountext \
+    $(SRC_AOSP_DIR)/prebuilt/common/etc/init.d/20extgapps:system/etc/init.d/20extgapps
 
 # Apps2sd files
 PRODUCT_COPY_FILES += \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/bin/a2sd:system/bin/a2sd \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/xbin/zipalign:system/xbin/zipalign \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/etc/init.d/10apps2sd-redux:system/etc/init.d/10apps2sd
+    $(SRC_AOSP_DIR)/prebuilt/common/bin/a2sd:system/bin/a2sd \
+    $(SRC_AOSP_DIR)/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
+    $(SRC_AOSP_DIR)/prebuilt/common/xbin/zipalign:system/xbin/zipalign \
+    $(SRC_AOSP_DIR)/prebuilt/common/etc/init.d/10apps2sd-redux:system/etc/init.d/10apps2sd
 
 # Misc files
 PRODUCT_COPY_FILES += \
-    $(SRC_EVERVOLV_DIR)/prebuilt/common/bin/welcome_motd:system/bin/welcome_motd
+    $(SRC_AOSP_DIR)/prebuilt/common/bin/welcome_motd:system/bin/welcome_motd

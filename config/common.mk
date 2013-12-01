@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= evervolv
+PRODUCT_BRAND ?= aosp
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -32,32 +32,29 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     EVToolbox \
-    EVUpdater \
-    EVTips \
-    EVWidgets \
     su
 
 # Backup Transport
-PRODUCT_PACKAGE_OVERLAYS += $(SRC_EVERVOLV_DIR)/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += $(SRC_AOSP_DIR)/overlay/common
 
 # Disable strict mode
 ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.sys.strictmode.disable=true
 
 # Theme support
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/themes.mk)
+$(call inherit-product, $(SRC_AOSP_DIR)/config/themes.mk)
 
 # Commandline / Init stuff
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/tools.mk)
+$(call inherit-product, $(SRC_AOSP_DIR)/config/tools.mk)
 
 # LatinIME english dictionary
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/dictionaries/english.mk)
+$(call inherit-product, $(SRC_AOSP_DIR)/config/dictionaries/english.mk)
 
 #
 # Version Info
 #
 
-PRODUCT_VERSION_MAJOR = 4
+PRODUCT_VERSION_MAJOR = 1
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0
 

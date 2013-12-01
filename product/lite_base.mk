@@ -55,4 +55,4 @@ $(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/locales_full.mk)
 
 # Get everything else from the parent package
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/product/lite_no_telephony.mk)
+$(call inherit-product, $(SRC_AOSP_DIR)/product/lite_no_telephony.mk)
